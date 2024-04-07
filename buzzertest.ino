@@ -9,6 +9,14 @@ int echoPin = 8;
 int trigPin = 9;
 int ledPin = 3;
 
+currentHour = 8;
+currentMinute = 59;
+currentSecond = 50;
+
+alarmHour = 9;
+alarmMinute= 0;
+alarmSecond = 0;
+
 // declares other variables
 int buttonState = 0;
 float duration_calibrated = 0;
@@ -24,8 +32,8 @@ void setup() {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   pinMode(buzzer, OUTPUT);
-  setTime(8,59,50,1,1,20);
-  Alarm.alarmRepeat(9,0,0,AlarmGoesOff);
+  setTime(currentHour,currentMinute,currentSecond,1,1,20);
+  Alarm.alarmRepeat(alarmHour,alarmMinute,alarmSecond,AlarmGoesOff);
 }
 
 void loop() {
@@ -107,4 +115,3 @@ void checkInBed()
   } 
   
 }
-
