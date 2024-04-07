@@ -20,7 +20,7 @@ def send_command(command):
 #    arduino.write(command.encode())
 #    time.sleep(0.1)
 
-turn_on_time = "22:35:00"
+turn_on_time = "09:00:00"
 
 #def setup_board(port):
    # board = pyfirmata.Arduino(port)
