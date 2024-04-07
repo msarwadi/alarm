@@ -41,4 +41,4 @@ if __name__ == "__main__":
     main_thread = threading.Thread(target=main)
     main_thread.start()
 
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
