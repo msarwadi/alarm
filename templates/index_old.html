@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Alarm</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<h1>Start Your Day Positively</h1>
+				<p>
+					It's more important than ever to be on time so that you can
+					fit everything you need to do into the time you have time do
+					it. Our device and companion web app allow you to start your
+					day positively by making sure that you get out of bed on
+					time.
+				</p>
+				<input
+					class="button"
+					type="button"
+					onClick="document.getElementById('middle').scrollIntoView();"
+					value="Go to Alarm"
+				/>
+			</div>
+			<div class="image-container">
+				<img src="alarm.png" alt="3D illustration of alarm clock" />
+			</div>
+		</div>
+
+		<div class="container section">
+			<div class="info-section">
+				<div class="info-box">
+					<img src="spedometer.png" alt="Icon 1" />
+					<p>
+						Life is hard, and tiring. Sometimes it's hard to just
+						get out of bed on time. To help you get out of bed first
+						thing in the morning, and not turn off your alarm and go
+						back to sleep (we've all been there), we created
+						wake-up.club.
+					</p>
+				</div>
+				<div class="info-box">
+					<img src="rocket.png" alt="Icon 2" />
+					<p>
+						It only takes 3 steps to set everything up! First, mount
+						our device to your wall and give it power. Then, press
+						the button on the device to calibrate it. Finally, set
+						your alarm on our companion web app.
+					</p>
+				</div>
+				<div class="info-box">
+					<img src="hand.png" alt="Icon 3" />
+					<p>
+						The ultrasonic sensor on our device detects when you get
+						out of bed and turns off its alarm. If you try and sneak
+						back into bed after getting up, it'll catch you and turn
+						the alarm back on!
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="container" id="middle">
+				<div class="content2">
+					<h2>Alarm will sound at:</h2>
+					<h3>Set alarm (hh/mm/ss):</h3>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
